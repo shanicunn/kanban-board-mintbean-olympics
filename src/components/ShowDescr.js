@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default function ShowDescr() {
+ function ShowDescr() {
     const openDescr = () => {
         
         document.querySelector(".card-descr").style.visibility="visible";
@@ -13,3 +13,4 @@ export default function ShowDescr() {
         </button>
     )
 }
+export default ShowDescr;
