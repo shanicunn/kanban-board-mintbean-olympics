@@ -6,7 +6,7 @@ class KanBanCard extends React.Component {
         super(props);
         this.state = {
             cardTitle: "Task Title",
-            cardDescr: "Task description",
+            cardDescr: "Task description goes here",
         }
     }
     onCardTitleChange = (e) => {
@@ -31,8 +31,8 @@ class KanBanCard extends React.Component {
                 {/* CARD DESCRIPTION */}
                 <section id="card-descr" className="card-descr">
                     {/* <p>{this.state.cardDescr}</p> */}
-                    <textarea value={this.state.cardDesc} onChange={this.onCardDescrChange} />
-                    {/* <input type="text" value={this.state.cardDesc} onChange={this.onCardDescrChange} /> */}
+                    <textarea value={this.state.cardDescr} onChange={this.onCardDescrChange} />
+                    {/* <input type="text" value={this.state.cardDescr} onChange={this.onCardDescrChange} /> */}
                 </section>
                 
                 
