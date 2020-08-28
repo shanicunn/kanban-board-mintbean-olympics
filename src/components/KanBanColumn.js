@@ -9,12 +9,12 @@ function KanBanColumn (props) {
             <main className="column">
                 {/* COLUMN TITLE */}
                 <section className="column-title">
-                    <h1>{props.title}</h1>
+                    <h1>{props.columnTitle}</h1>
                     <AddCard />
                 </section>
                 {/* COLUMN CARDS */}
                 <section className="column-card">
-                    <KanBanCard />
+                    {/* <KanBanCard /> */}
                 </section>
                 
                 
