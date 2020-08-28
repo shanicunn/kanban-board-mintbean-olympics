@@ -6,16 +6,17 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: darkorange;
+  
 }
 /* KANBAN COLUMN */
 .column {
-  
-  background-color: white;
+  padding: 5px;
+  background-color: orange;
   border: black 1px solid;
+
 }
 .column-title {
-  background-color: darkorange;
+  
   border-bottom: 1px solid black;
 }
 
@@ -23,20 +24,21 @@
   
 
 } */
+.card-add {
+  border: none;
+}
 /* KANBAN CARD */
 .card {
-  background-color: white;
+  background-color: salmon;
   border: black 1px solid;
   height: 200px;
   width: 200px;
+  padding: 5px;
 }
 .card-title {
-  background-color: darkorange;
   border-bottom: 1px solid black;
 }
-.card-add {
 
-}
-.card-descr {
-
+.card-descr-btn {
+  border: none;
 }
