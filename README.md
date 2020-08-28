@@ -1,69 +1,95 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Part 1 - Building the Kanban board
+Rather than go into a long-winded explanation of how to build the board, here's what I'm going to do.
 
-## Available Scripts
+I'm going to give you the user stories.
 
-In the project directory, you can run:
+Build this in a frontend-only fashion so that it's deployable on Github Pages. Backends are DISALLOWED for reasons of scope management (it'd be too hard to do a full stack kanban board).
 
-### `npm start`
+## Required entity relations
+Here are some basic entity relations. You need to fulfill these requirements, but they are not limits. You can definitely expand on top of them.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Column: Title (required), Ordering, Cards
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* Card: Title (required), Description
 
-### `npm test`
+* User: this entity does NOT exist since this is not an authenticated app
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Required features
+Here are the basic features. You MUST implement all these features over the course of the weekend in order to win the hackathon.
 
-### `npm run build`
+* When the application starts, you have 3 empty columns: "Todo", "In progress", "Done"
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Each column has a "+" button. The user can click this button to create a task card in any column
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* Task cards clearly display the title of the contained task
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* The user can move tasks between columns using drag-and-drop
 
-### `npm run eject`
+* The user can delete a task.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* The user can expand a task card to see its description
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* The user can move tasks between columns using the "Move" button in the context menu
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* The user can edit column titles
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* The user can create columns
 
-## Learn More
+* The user can change the order of columns using drag-and-drop
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* The user can delete columns (you will have to decide what happens to a column's cards in this case)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Bonus features
+These are suggestions for improvements once "Important" features are completed. The more of these you do, the better your app will be, and the more chances you have of winning the hackathon. 
 
-### Code Splitting
+* The site is mobile-responsive (highly recommended but not required)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+* Each card has a context menu you can access through right-click (desktop).
 
-### Analyzing the Bundle Size
+* Each card has a context menu you can access through long-press (mobile).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+* Nice animations
 
-### Making a Progressive Web App
+* The user can access the context menu using right-click
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+* The user can add images as attachments to the cards (yes, it is possible to save images to localstorage, https://stackoverflow.com/questions/19183180/how-to-save-an-image-to-localstorage-and-display-it-on-the-next-page)
 
-### Advanced Configuration
+* Data is saved to LocalStorage or IndexedDB (to avoid collisions when using FeaturePeek, please use a unique name for the namespace you're saving your data to)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+* Something cooler? More creative? It's your site! Make it however you want, we're looking forward to seeing your creativity!
 
-### Deployment
+## Disallowed features
+These features should NOT be present, in favour of scope management.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+1. Login/logout
 
-### `npm run build` fails to minify
+2. Backend server
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# kanban-board-mintbean-olympics
+# Part 2 - Refining the UX & optional "help" sections
+From Rocket55's site: 
+UX is important because it tries to fulfill the user's needs. It aims to provide positive experiences that keep users loyal to the product or brand. Additionally, a meaningful user experience allows you to define customer journeys on your website that are most conducive to business success.
+
+In order for your kanban board to have good UX, each part should be either intuitive or clearly & concisely explained. 
+
+## Here are some more suggestions to help you win this section of the challenge:
+
+* onboarding tutorial
+
+* help text
+
+* info bubbles
+
+* helpful hints
+
+* clear notifications
+
+# Part 3 - Landing page + promoting on social media
+We have this section because:
+
+Personal projects without landing pages end up being COMPLETELY invisible to recruiters & employers.
+
+Personal projects that are not promoted on social media are RARELY seen by recruiters & employers.
+
+## Part 3.A: You must create a landing page for your kanban board that clearly explains your product. For example, see FeaturePeek's landing page: https://featurepeek.com/ . It's a great landing page that concisely explains what FeaturePeek is all about. Google "Product Landing Page" for more examples of standard landing pages for products.
+
+## Part 3.B: promote your project on social media! LinkedIn and Twitter are great places to be. There will be an award for "Best marketing" so make sure you paste your posts + tweets inside the Discord server! and tag Mintbean!!!
