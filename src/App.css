@@ -1,5 +1,6 @@
 .App {
   margin: 50px;
+  font-family: 'Montserrat', sans-serif;
 }  
 /* KANBAN BOARD */
 .board {
@@ -18,6 +19,7 @@
   width: 300px;
   border-radius: 15px;
   box-shadow: gray 1px 1px 4px 2px;
+  opacity: 75%;
 }
 .column-title {
   
