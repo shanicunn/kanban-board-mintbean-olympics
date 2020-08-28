@@ -12,10 +12,12 @@
 .column {
   padding: 5px;
   background-color: orange;
-  border: black 1px solid;
+  /* border: black 1px solid; */
   height: 100vh;
-  margin: 5px;
+  margin: 10px;
   width: 300px;
+  border-radius: 15px;
+  box-shadow: gray 1px 1px 4px 2px;
 }
 .column-title {
   
