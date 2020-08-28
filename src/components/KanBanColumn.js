@@ -10,10 +10,11 @@ function KanBanColumn (props) {
                 {/* COLUMN TITLE */}
                 <section className="column-title">
                     <h1>{props.columnTitle}</h1>
-                    <AddCard />
+                    
                 </section>
                 {/* COLUMN CARDS */}
                 <section className="column-card">
+                <AddCard />
                     {/* <KanBanCard /> */}
                 </section>
                 
