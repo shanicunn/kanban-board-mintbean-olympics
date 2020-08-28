@@ -1,5 +1,6 @@
 import React from 'react';
 import KanBanCard from './KanBanCard';
+import AddCard from './AddCard';
 
 class KanBanColumn extends React.Component {
 
@@ -10,6 +11,7 @@ class KanBanColumn extends React.Component {
                 {/* COLUMN TITLE */}
                 <section className="column-title">
                     <h1>TEST COLUMN</h1>
+                    <AddCard />
                 </section>
                 {/* COLUMN CARDS */}
                 <section className="column-card">
