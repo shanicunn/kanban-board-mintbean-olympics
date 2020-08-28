@@ -1,5 +1,5 @@
 import React from 'react';
-import KanBanCard from './KanBanCard';
+// import KanBanCard from './KanBanCard';
 import AddCard from './AddCard';
 
 function KanBanColumn (props) {
