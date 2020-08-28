@@ -2,15 +2,13 @@ import React from 'react';
 import KanBanCard from './KanBanCard';
 import AddCard from './AddCard';
 
-class KanBanColumn extends React.Component {
-
-    render() {
+function KanBanColumn(props) {
         return (
             // OUTER COLUMN
             <main className="column">
                 {/* COLUMN TITLE */}
                 <section className="column-title">
-                    <h1>TEST COLUMN</h1>
+                    <h1>{props.title}</h1>
                     <AddCard />
                 </section>
                 {/* COLUMN CARDS */}
@@ -22,6 +20,5 @@ class KanBanColumn extends React.Component {
             </main>
         )
     }
-}
 
 export default KanBanColumn;
