@@ -6,9 +6,9 @@ class KanBanBoard extends React.Component {
         return (
             // OUTER COLUMN
             <main className="board">
-               <KanBanColumn />
-               <KanBanColumn />
-               <KanBanColumn />
+               <KanBanColumn title="Todo" />
+               <KanBanColumn title="In Progress" />
+               <KanBanColumn title="Done" />
 
             </main>
         )
