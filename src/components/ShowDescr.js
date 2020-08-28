@@ -1,8 +1,12 @@
 import React from 'react';
 
+
 export default function ShowDescr() {
+    const openDescr = () => {
+        document.getElementById("card-descr").style.visibility="visible";
+    }
     return (
-        <button className="card-descr-btn ">
+        <button onClick={openDescr} className="card-descr-btn ">
             More
         </button>
     )
