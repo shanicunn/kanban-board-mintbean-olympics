@@ -1,5 +1,5 @@
 .App {
-  
+  margin: 50px;
 }  
 /* KANBAN BOARD */
 .board {
@@ -13,7 +13,8 @@
   padding: 5px;
   background-color: orange;
   border: black 1px solid;
-
+  height: 100vh;
+  margin: 5px;
 }
 .column-title {
   
