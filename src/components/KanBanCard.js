@@ -31,7 +31,8 @@ class KanBanCard extends React.Component {
                 {/* CARD DESCRIPTION */}
                 <section id="card-descr" className="card-descr">
                     {/* <p>{this.state.cardDescr}</p> */}
-                    <input type="text" value={this.state.cardDesc} onChange={this.onCardDescrChange} />
+                    <textarea value={this.state.cardDesc} onChange={this.onCardDescrChange} />
+                    {/* <input type="text" value={this.state.cardDesc} onChange={this.onCardDescrChange} /> */}
                 </section>
                 
                 
