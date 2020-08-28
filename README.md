@@ -90,6 +90,6 @@ Personal projects without landing pages end up being COMPLETELY invisible to rec
 
 Personal projects that are not promoted on social media are RARELY seen by recruiters & employers.
 
-## Part 3.A: You must create a landing page for your kanban board that clearly explains your product. For example, see FeaturePeek's landing page: https://featurepeek.com/ . It's a great landing page that concisely explains what FeaturePeek is all about. Google "Product Landing Page" for more examples of standard landing pages for products.
+### Part 3.A: You must create a landing page for your kanban board that clearly explains your product. For example, see FeaturePeek's landing page: https://featurepeek.com/ . It's a great landing page that concisely explains what FeaturePeek is all about. Google "Product Landing Page" for more examples of standard landing pages for products.
 
-## Part 3.B: promote your project on social media! LinkedIn and Twitter are great places to be. There will be an award for "Best marketing" so make sure you paste your posts + tweets inside the Discord server! and tag Mintbean!!!
+### Part 3.B: promote your project on social media! LinkedIn and Twitter are great places to be. There will be an award for "Best marketing" so make sure you paste your posts + tweets inside the Discord server! and tag Mintbean!!!
