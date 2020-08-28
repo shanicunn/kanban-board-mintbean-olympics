@@ -27,8 +27,8 @@ class AddCard extends React.Component {
         const addACardClicked = this.state.clicked;
         // When clicked a card will render along with the add card btn
         // Only 1 task generates
-        while (addACardClicked === false) {
-            console.log("Button set to true");
+        if (addACardClicked === false) {
+            console.log("Button currently set to false");
             return ( 
                 <span>
                 <button onClick={this.setTrue} className="card-add">
@@ -39,8 +39,8 @@ class AddCard extends React.Component {
             </span>
             )
             } 
-        while (addACardClicked === true) {
-            console.log("Button set to false");
+        if (addACardClicked === true) {
+            console.log("Button currently set to true");
             return (
                 <span>
                     <button onClick={this.setFalse} className="card-add">
