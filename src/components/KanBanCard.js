@@ -13,7 +13,7 @@ class KanBanCard extends React.Component {
                     <ShowDescr />
                 </section>
                 {/* CARD DESCRIPTION */}
-                <section className="card-descr">
+                <section id="card-descr" className="card-descr">
                     <p> Description here</p>
                 </section>
                 
