@@ -58,10 +58,30 @@
 .card-title {
   border-bottom: 1px solid black;
 }
+.card-title input {
+  padding: 5px;
+  border: none;
+  background-color: inherit;
+}
 .card-descr {
   visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 5px;
 }
 
 .card-descr-btn {
   border: none;
+  background-color: inherit;
+}
+.card-descr-btn:hover {
+  color: white;
+}
+.card-descr textarea {
+  border: none;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+  size: inherit;
+  color: black;
 }
