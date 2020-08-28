@@ -2,7 +2,8 @@ import React from 'react';
 import KanBanCard from './KanBanCard';
 import AddCard from './AddCard';
 
-function KanBanColumn(props) {
+function KanBanColumn (props) {
+   
         return (
             // OUTER COLUMN
             <main className="column">
@@ -20,5 +21,6 @@ function KanBanColumn(props) {
             </main>
         )
     }
+
 
 export default KanBanColumn;
