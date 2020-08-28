@@ -18,6 +18,7 @@
   background-color: darkorange;
   border-bottom: 1px solid black;
 }
+
 /* .column-card {
   
 
@@ -33,6 +34,9 @@
   background-color: darkorange;
   border-bottom: 1px solid black;
 }
-/* .card-descr {
+.card-add {
 
-} */
+}
+.card-descr {
+
+}
