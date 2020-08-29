@@ -5,7 +5,13 @@ import KanBanBoard from './components/KanBanBoard';
 function App() {
   return (
     <div className="App">
-      <KanBanBoard />
+      <section>
+        <h1 className="board-title">KANBAN BOARD</h1>
+      </section>
+      <section>
+        <KanBanBoard />
+      </section>
+      
     </div>
   );
 }
