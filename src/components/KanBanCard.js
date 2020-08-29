@@ -1,14 +1,19 @@
 import React from 'react';
 import ShowDescr from './ShowDescr';
+// import HideDescr from './HideDescr';
 
+// KANBAN CARD COMPONENT
 class KanBanCard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             cardTitle: "Task Title",
             cardDescr: "Task description goes here",
+            descrVisibility: false,
+            id: 0,
         }
     }
+    
     onCardTitleChange = (e) => {
         this.setState({
             cardTitle: e.target.value,
@@ -19,10 +24,21 @@ class KanBanCard extends React.Component {
             cardDescr: e.target.value,
         })
     }
+    onDescrVisible = () => {
+        this.setState({
+            descrVisibility: true,
+        })
+    }
+    onDescrHide = () => {
+        this.setState({
+            descrVisibility: false,
+        })
+    }
     render() {
+       
         return (
             // OUTER CARD
-            <main className="card">
+            <main className="card" id={this.state.id}>
                 {/* CARD TITLE */}
                 <section className="card-title">
                     <input type="text" value={this.state.cardTitle} onChange={this.onCardTitleChange} />
