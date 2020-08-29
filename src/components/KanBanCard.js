@@ -13,29 +13,31 @@ class KanBanCard extends React.Component {
             id: 0,
         }
     }
-    
+    // Changes Title With Input
     onCardTitleChange = (e) => {
         this.setState({
             cardTitle: e.target.value,
         })
     }
+    // Changes Description With Input
     onCardDescrChange = (e) => {
         this.setState({
             cardDescr: e.target.value,
         })
     }
+    // Sets description to visible
     onDescrVisible = () => {
         this.setState({
             descrVisibility: true,
         })
     }
+    // Sets description to hidden
     onDescrHide = () => {
         this.setState({
             descrVisibility: false,
         })
     }
     render() {
-       
         return (
             // OUTER CARD
             <main className="card" id={this.state.id}>
