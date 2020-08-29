@@ -24,29 +24,27 @@ class AddCard extends React.Component {
             )
     }
     render () {
-        
-        
         // Variable for conditional statement
         const addACardClicked = this.state.clicked;
         // When clicked a card will render along with the add card btn
         // Only 1 task generates
         // NO CARD DISPLAYED ON DEFAULT
-        if (addACardClicked === false) {
+        while (addACardClicked === false) {
             console.log("Button currently set to false");
             return ( 
                 <span>
                     <button onClick={() => this.setTrue()} className="card-add">
                         +
                     </button>
-                {/* <KanBanCard /> */}
+                    {/* <KanBanCard /> */}
             </span>
             )
-            } 
+        } 
             // DISPLAYS CARD ON CLICK
-            let count = this.state.id;
-        if (addACardClicked === true) {
+            
+        while (addACardClicked === true) {
             console.log("Button currently set to true");
-            count ++;
+            
             console.log("ID number: ", this.count);
             return (
                 <span>
@@ -61,10 +59,12 @@ class AddCard extends React.Component {
         }
         
         return (
+            <main>
+                {/* <button onClick={this.setTrue} className="card-add">
+                    +
+                </button> */}
+            </main>
             
-            <button onClick={this.setTrue} className="card-add">
-                +
-            </button>
         )
     }
 }
