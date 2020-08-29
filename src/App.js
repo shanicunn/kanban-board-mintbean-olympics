@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import KanBanBoard from './components/KanBanBoard';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
       <section>
         <KanBanBoard />
       </section>
+      <footer className="footer">
+        <Footer />
+      </footer>
+        
       
     </div>
   );
