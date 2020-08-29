@@ -1,18 +1,23 @@
+body {
+  background-image: url(./assets/backgrounds/vintage-stripes-background.jpg);
+}
 .App {
   margin: 50px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  
 }  
-.board-title {
-  font-size: 60px;
-  text-shadow: gray 3px 3px 4px;
-}
+
 /* KANBAN BOARD */
 .board {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-image: url("/assets/backgrounds/vecteezy_abstract-pink-polygon-artistic-geometric-with-gold-line-background_539653/pink-polygon-gold-line-bg-01.jpg");
+  
+}
+.board-title {
+  font-size: 60px;
+  text-shadow: gray 3px 3px 4px;
 }
 /* KANBAN COLUMN */
 .column {
