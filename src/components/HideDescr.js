@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+// FUNCTION TO HIDE DESCRIPTION ON CLICK
  function HideDescr() {
     const closeDescr = () => {
         
