@@ -28,6 +28,7 @@ import React from 'react';
     openDescr = () => {
         document.querySelector(".card-descr").style.visibility="visible";
         document.querySelector(".card").style.height="200px";
+        console.log("Open Desc clicked");
     }
     // HIDE DESCRIPTION
     hideDescr = () => {
@@ -36,18 +37,18 @@ import React from 'react';
     }
     render() {
         const openDescrClicked = this.state.clicked;
-        if (openDescrClicked === false) {
+        if (openDescrClicked === true) {
             console.log("Description set to hidden");
             return (
-                <button onClick={this.setFalse} className="card-descr-btn ">
+                <button onClick={() => this.setFalse()} className="card-descr-btn ">
                     More
                 </button>
             )
         }
-        if (openDescrClicked === true) {
+        if (openDescrClicked === false) {
             console.log("Description set to visible");
             return (
-                <button onClick={this.setTrue} className="card-descr-btn ">
+                <button onClick={() => this.setTrue()} className="card-descr-btn ">
                     More
                 </button>
             )

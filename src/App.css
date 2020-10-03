@@ -57,6 +57,9 @@ body {
 .card-add:hover {
   color: gray;
 }
+.column li {
+  list-style: none;
+}
 /* KANBAN CARD */
 .card {
   background-color: salmon;

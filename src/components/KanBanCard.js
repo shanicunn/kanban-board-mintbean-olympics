@@ -40,7 +40,7 @@ class KanBanCard extends React.Component {
     render() {
         return (
             // OUTER CARD
-            <main className="card" id={this.state.id}>
+            <main className="card">
                 {/* CARD TITLE */}
                 <section className="card-title">
                     <input type="text" value={this.state.cardTitle} onChange={this.onCardTitleChange} />
@@ -52,7 +52,7 @@ class KanBanCard extends React.Component {
                     <textarea value={this.state.cardDescr} onChange={this.onCardDescrChange} />
                     {/* <input type="text" value={this.state.cardDescr} onChange={this.onCardDescrChange} /> */}
                 </section>
-                
+             ;
                 
             </main>
         )

@@ -39,27 +39,15 @@ class KanBanBoard extends React.Component {
             ]
         }
     }    
-    // addCard = columnIndex => {
-    //     const name = window.prompt
-    // }
 
     render() {
         return (
             // OUTER BOARD
             <main className="board">
-                {/* {this.state.columns.map((column, columnIndex) => ( */}
-                    <KanBanColumn 
-                        columnTitle="To Do"
-                        // column={column}
-                        // columnIndex={columnIndex}
-                        // key={columnIndex} 
-                            
-                        />
-                )
-                {/* )} */}
-               
-               <KanBanColumn columnTitle="In Progress" />
-               <KanBanColumn columnTitle="Done" />
+                <KanBanColumn 
+                    columnTitle="To Do"  />
+                <KanBanColumn columnTitle="In Progress" />
+                <KanBanColumn columnTitle="Done" />
 
             </main>
         )
