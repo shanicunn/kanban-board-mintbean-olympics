@@ -17,7 +17,12 @@ class KanBanColumn extends React.Component {
             { kanbanList: [...this.state.kanbanList, newCard] }
             );
     }
-  
+    deleteCard(index) {
+            const newList = this.state.kanbanList;
+            newList.splice(index, 1);
+            this.setState({ newList });
+        }
+    
     
     render() {
         return (
@@ -30,12 +35,15 @@ class KanBanColumn extends React.Component {
                 </section>
                 {/* COLUMN CARDS */}
                 <section className="column-card">
-                    <button onClick={() => this.newCard()} className="card-add"> + </button>
+                    <button onClick={() => this.newCard()} className="card-btn"> + </button>
 
                     <div className="cards-holder">
                         {this.state.kanbanList.map(
                             (card, i) => 
-                            <li key= {i}>{card}</li>
+                            <li key= {i}>
+                                {card}
+                                <button className="card-btn" onClick={() => this.deleteCard(i)}> - </button>
+                            </li>
                             )}
                     </div>
                 </section>
