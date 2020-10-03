@@ -18,9 +18,9 @@ class KanBanColumn extends React.Component {
             );
     }
     deleteCard(index) {
-            const newList = this.state.kanbanList;
-            newList.splice(index, 1);
-            this.setState({ newList });
+            const kanbanList = this.state.kanbanList;
+            kanbanList.splice(index, 1);
+            this.setState({ kanbanList });
         }
     
     
@@ -39,12 +39,13 @@ class KanBanColumn extends React.Component {
 
                     <div className="cards-holder">
                         {this.state.kanbanList.map(
-                            (card, i) => 
+                            (card, i) => {
+                            return (
                             <li key= {i}>
                                 {card}
                                 <button className="card-btn" onClick={() => this.deleteCard(i)}> - </button>
                             </li>
-                            )}
+                        )})}
                     </div>
                 </section>
                 
