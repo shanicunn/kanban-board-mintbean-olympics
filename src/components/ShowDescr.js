@@ -10,54 +10,51 @@ import React from 'react';
         this.openDescr = this.openDescr.bind(this);
         this.hideDescr = this.hideDescr.bind(this);
      }
-    // SET CLICKED TO TRUE
-    setTrue() {
+  
+    // OPEN DECRIPTION
+    openDescr = () => {
+        // e.target.style.visibility = "visible";
+        document.querySelector(".card-descr").style.visibility="visible";
+        document.querySelector(".card").style.height="200px";
+        // this.setTrue();
         this.setState(
             { clicked: true }
         )
-        this.openDescr();
-        }
-    // SET CLICKED TO FALSE
-    setFalse() {
-        this.setState(
-            { clicked: false }
-        )
-        this.hideDescr();
-    }
-    // OPEN DECRIPTION
-    openDescr = () => {
-        document.querySelector(".card-descr").style.visibility="visible";
-        document.querySelector(".card").style.height="200px";
-        console.log("Open Desc clicked");
     }
     // HIDE DESCRIPTION
     hideDescr = () => {
         document.querySelector(".card-descr").style.visibility = "hidden";
+        // e.target.style.visibility = "hidden";
         document.querySelector(".card").style.height = "50px";
-    }
+        // this.setFalse();
+        this.setState(
+            { clicked: false }
+        )
+    };
+
     render() {
         const openDescrClicked = this.state.clicked;
         if (openDescrClicked === true) {
-            console.log("Description set to hidden");
+            console.log("Description set to visible");
             return (
-                <button onClick={() => this.setFalse()} className="card-descr-btn ">
-                    More
+                <button onClick={() => this.hideDescr()} className="card-descr-btn ">
+                    Show More
                 </button>
             )
         }
         if (openDescrClicked === false) {
-            console.log("Description set to visible");
+            console.log("Description set to hidden");
             return (
-                <button onClick={() => this.setTrue()} className="card-descr-btn ">
-                    More
+                <button onClick={() => this.openDescr()} className="card-descr-btn ">
+                    Show More
                 </button>
             )
         }
         return (
             <div>
-                <button onClick={this.openDescr} className="card-descr-btn ">
+                {/* <button onClick={this.openDescr} className="card-descr-btn ">
                     More
-                </button>
+                </button> */}
             </div>
             
     )
